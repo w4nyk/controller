@@ -1,2 +1,3 @@
 # controller
-Repeater controller documentation
+
+Repeater controller documentation, config files, and various sundry other things.
