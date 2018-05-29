@@ -11,7 +11,7 @@ RUN echo 'deb http://mirrordirector.raspbian.org/raspbian/ buster main' | sudo t
 	&& apt-get -t buster install svxlink-server \
 	&& cd /usr/share/svxlink/sounds/ \
 	&& wget https://github.com/sm0svx/svxlink-sounds-en_US-heather/releases/download/14.08/svxlink-sounds-en_US-heather-16k-13.12.tar.bz2 \
-	&& tar xvjf svxlink-sounds-en_US-heather-16k-13.12.tar.bz2 \
+	&& tar xjf svxlink-sounds-en_US-heather-16k-13.12.tar.bz2 \
 	&& ln -s en_US-heather-16k en_US \
 	&& curl -s -o "/tmp/svxlink/" -L \
         "https://github.com/w4nyk/controller/archive/${CH_VERSION}.tar.gz" \
