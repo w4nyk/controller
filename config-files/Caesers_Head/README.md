@@ -5,10 +5,9 @@ After you have setup your rpi3b+, as per the manufacturer's instructions, you wi
 
 Login to the pi, and execute the following commands
 
-```sudo echo 'deb http://mirrordirector.raspbian.org/raspbian/ buster main' | tee /etc/apt/sources.list.d/svxlink.list```
-```sudo echo 'deb http://giteduberger.fr rpimonitor/' | tee /etc/apt/sources.list.d/rpimonitor.list ```
-  
-  ```apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 2C0D3C0F \
+```text sudo echo 'deb http://mirrordirector.raspbian.org/raspbian/ buster main' | tee /etc/apt/sources.list.d/svxlink.list \
+  && sudo echo 'deb http://giteduberger.fr rpimonitor/' | tee /etc/apt/sources.list.d/rpimonitor.list \ ```
+  && apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 2C0D3C0F \
   && apt-get update \
   && apt-get install rpimonitor wget bzip2 curl \
   && apt-get -t buster install svxlink-server \
