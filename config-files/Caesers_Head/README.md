@@ -16,8 +16,8 @@ sudo echo 'deb http://mirrordirector.raspbian.org/raspbian/ buster main' | tee /
 && wget https://github.com/sm0svx/svxlink-sounds-en_US-heather/releases/download/14.08/svxlink-sounds-en_US-heather-16k-13.12.tar.bz2 \
 && tar xjf svxlink-sounds-en_US-heather-16k-13.12.tar.bz2 \
 && ln -s en_US-heather-16k en_US \
-&& curl -s -o "/tmp/svxlink/" -L "https://github.com/w4nyk/controller/archive/${CH_VERSION}.tar.gz" \
-&& tar zxf "/tmp/${CH_VERSION}.tar.gz" -C /tmp/ \
+&& curl -s -o "/tmp/svxlink/" -L "https://github.com/w4nyk/controller/archive/0.01.tar.gz" \
+&& tar zxf "/tmp/0.01.tar.gz" -C /tmp/ \
 && cp -R /tmp/controller-0.01/config-files/Caesers_Head/svxlink/* /etc/svxlink/ \
 && cp -R /tmp/controller-0.01/config-files/Caesers_Head/rpimonitor/* /etc/rpimonitor/
 ```
