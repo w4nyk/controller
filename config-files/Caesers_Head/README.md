@@ -5,8 +5,9 @@ After you have setup your rpi3b+, as per the manufacturer's instructions, you wi
 
 Login to the pi, and execute the following commands
 
-```sudo echo 'deb http://mirrordirector.raspbian.org/raspbian/ buster main' | tee /etc/apt/sources.list.d/svxlink.list \
-  && sudo echo 'deb http://giteduberger.fr rpimonitor/' | tee /etc/apt/sources.list.d/rpimonitor.list \ 
+```sudo echo 'deb http://mirrordirector.raspbian.org/raspbian/ buster main' | tee /etc/apt/sources.list.d/svxlink.list```
+
+  ```sudo echo 'deb http://giteduberger.fr rpimonitor/' | tee /etc/apt/sources.list.d/rpimonitor.list \ 
   && apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 2C0D3C0F \
   && apt-get update \
   && apt-get install rpimonitor wget bzip2 curl \
@@ -34,5 +35,5 @@ The Dockerfile installs rpi-monitor and svxlink. Additionally, a root-enabled en
 ### Building the Dockerfile and running the image
 To build the image from the Dockerfile, and then run it, you can try the script located in the top-level utils directory [create-container.bash](https://github.com/w4nyk/controller/blob/master/utils/create-container.bash)
 
-Please note, ports aren't working quite right, again, it's on the TODO.
+Please note, ports aren't working quite right, it's on the TODO.
 
